@@ -11,3 +11,5 @@ jpa使用
 spring4.0条件化配置
 默认Logback记录日志
 SpringApplicationConfiguration高版本spring boot取消了这个注解
+添加yml配置文件，yml支持面向对象的语法
+添加banner.txt修改boot项目启动时显示的图片信息
