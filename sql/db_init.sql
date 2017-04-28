@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS `book`;
+CREATE TABLE book(
+  id BIGINT(20) NOT NULL AUTO_INCREMENT ,
+  reader VARCHAR(40) DEFAULT "" COMMENT '读书人',
+  isbn VARCHAR(40) DEFAULT "" COMMENT '书编号',
+  title VARCHAR(40) DEFAULT "" COMMENT '书名',
+  description VARCHAR(80) DEFAULT "" COMMENT '简介',
+  author VARCHAR(40) DEFAULT "" COMMENT '作者',
+  created datetime NOT NULL DEFAULT '2000-01-01',
+  modified datetime NOT NULL DEFAULT '2000-01-01',
+  PRIMARY KEY (`id`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
