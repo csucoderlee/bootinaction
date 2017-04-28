@@ -12,3 +12,14 @@ CREATE TABLE book(
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
+
+DROP TABLE IF EXISTS `shop`;
+CREATE TABLE shop(
+  id BIGINT(20) NOT NULL AUTO_INCREMENT ,
+  shop_name VARCHAR(40) DEFAULT "" COMMENT '读书人',
+  created datetime NOT NULL DEFAULT '2000-01-01',
+  modified datetime NOT NULL DEFAULT '2000-01-01',
+  PRIMARY KEY (`id`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;
