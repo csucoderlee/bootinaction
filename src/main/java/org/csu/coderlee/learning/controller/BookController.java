@@ -17,15 +17,9 @@ public class BookController {
 
     @Autowired
     BookRepository bookRepository;
-//
-//    @RequestMapping(value = "/book/{id}", method = RequestMethod.GET)
-//    public Book book(@PathVariable("id") Long id, Model model){
-//        return bookRepository.findById(id);
-//
-//    }
 
     @RequestMapping(value = "/book/id", method = RequestMethod.GET)
-    public Book book(Long id){
+    public Book book(Long id ){
         return bookRepository.findById(id);
     }
 
@@ -33,17 +27,5 @@ public class BookController {
     public Book book(@RequestBody Book book){
         return bookRepository.save(book);
     }
-//    @RequestMapping(value = "/books", method = RequestMethod.GET)
-//    public List<Book> bookList(List<Long> ids){
-//        return bookRepository.findByIds(ids);
-//    }
 
-    //    @RequestMapping("/book")
-//    public String readerBooks(@PathVariable("reader") String reader, Model model){
-//        List<Book> readingList = bookRepository.findByReader(reader);
-//        if (readingList != null){
-//            model.addAttribute("books", readingList);
-//        }
-//        return "readingList";
-//    }
 }
