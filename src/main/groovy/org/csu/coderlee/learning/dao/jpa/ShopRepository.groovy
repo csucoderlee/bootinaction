@@ -1,4 +1,4 @@
-package org.csu.coderlee.learning.dao
+package org.csu.coderlee.learning.dao.jpa
 
 import org.csu.coderlee.learning.domain.Shop
 import org.springframework.data.jpa.repository.JpaRepository

@@ -9,3 +9,8 @@ spring:
 
   profiles:
     active: dev
+#  http:
+#    converters:
+#      preferred-json-mapper: jackson
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

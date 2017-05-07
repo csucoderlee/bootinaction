@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.csu.coderlee.learning.dao.mybatis.BookMapper">
+
+    <resultMap id="bookResult" type="org.csu.coderlee.learning.domain.Book">
+        <id property="id" column="id" />
+        <result property="reader" column="reader" />
+        <result property="isbn" column="isbn" />
+        <result property="title" column="title" />
+        <result property="author" column="author" />
+        <result property="description" column="description" />
+    </resultMap>
+
+
+    <select id="findAll" resultMap="bookResult">
+        SELECT * FROM book
+    </select>
+</mapper>

@@ -1,6 +1,6 @@
 package org.csu.coderlee.learning.controller
 
-import org.csu.coderlee.learning.dao.ShopRepository
+import org.csu.coderlee.learning.dao.jpa.ShopRepository
 import org.csu.coderlee.learning.domain.Shop
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PathVariable
