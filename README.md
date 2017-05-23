@@ -14,3 +14,8 @@ SpringApplicationConfiguration高版本spring boot取消了这个注解
 添加yml配置文件，yml支持面向对象的语法
 添加banner.txt修改boot项目启动时显示的图片信息  
 mybatis框架支持
+
+## 配置mybatis
+1. 在 application.yml中配置 mybatis:
+     mapper-locations: classpath:mapper/*.xml
+2. book.xml中的id 和 BookMapper当中的方法名称相同
